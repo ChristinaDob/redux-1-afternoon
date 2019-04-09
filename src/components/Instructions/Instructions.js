@@ -13,7 +13,10 @@ class Instructions extends Component {
   }
 
   /* we need to listen to changes using subscribe */
-  /* Create a componentDidMount method for this component. subscribe goes inside this method. The callback function that we pass in should use getState to get an updated version of the Redux state. Then we'll use this.setState to update our component's state with the new values. */
+  /* Create a componentDidMount method for this component. subscribe 
+  goes inside this method. The callback function that we pass in should 
+  use getState to get an updated version of the Redux state. Then we'll 
+  use this.setState to update our component's state with the new values. */
   componentDidMount() {
     this.unsubscribe = store.subscribe(() => {
       const reduxState = store.getState();
@@ -42,7 +45,9 @@ class Instructions extends Component {
   }
   create() {
     // Create new recipe in Redux state
-    /* We need to use the dispatch method again, this time inside create. The type of the action object used in dispatch should match the action type we just imported, and there shouldn't be a payload. */
+    /* We need to use the dispatch method again, this time inside create. 
+    The type of the action object used in dispatch should match the action 
+    type we just imported, and there shouldn't be a payload. */
     store.dispatch({
       type: ADD_RECIPE
     });

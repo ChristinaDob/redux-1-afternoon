@@ -5,7 +5,9 @@ import RecipeCard from './../RecipeCard/RecipeCard';
 import './Home.css';
 
 class Home extends Component {
-  /* Inside the constructor, invoke the getState method (found on the store) and use the appropriate value from Redux state inside the component's initial state. */
+  /* Inside the constructor, invoke the getState method (found on the store) 
+  and use the appropriate value from Redux state inside the component's 
+  initial state. */
   constructor(props) {
     super(props);
     const reduxState = store.getState();
